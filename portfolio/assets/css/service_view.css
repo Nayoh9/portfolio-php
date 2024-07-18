@@ -1,0 +1,7 @@
+.background {
+  background-color: var(--tj-theme-accent-1);
+}
+
+.service_view_gutter {
+  height: 200px;
+}

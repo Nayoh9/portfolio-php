@@ -1,0 +1,161 @@
+/* CSS VARS  */
+:root {
+  --form-width-picture: 250px;
+  --form-height-picture: 250px;
+
+  --form-input-color: #2c3e50;
+}
+/* CSS VARS  */
+
+/* FONT */
+
+@font-face {
+  font-family: "montserrat_medium";
+  src: url("../fonts/Montserrat/static/Montserrat-Regular.eot");
+  src: url("../fonts/Montserrat/static/Montserrat-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/Montserrat/static/Montserrat-Regular.woff") format("woff"),
+    url("../fonts/Montserrat/static/Montserrat-Regular.ttf") format("truetype"),
+    url("../fonts/Montserrat/static/Montserrat-Regular.svg#After") format("svg");
+  font-display: swap;
+}
+/* FONT */
+
+/* GENERAL SETTINGS */
+
+body {
+  font-family: "montserrat_medium", "sans-serif";
+  background: linear-gradient(135deg, #4a148c, #000000);
+  min-height: 100vh;
+}
+
+h1,
+h2,
+p,
+a,
+li,
+label {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+}
+
+.form_asset {
+  width: var(--form-picture);
+  height: var(--form-height-picture);
+}
+
+#preview_child {
+  cursor: pointer;
+}
+
+.card p {
+  color: white;
+}
+
+.card {
+  background-color: var(--form-input-color);
+}
+
+input,
+select {
+  background-color: var(--form-input-color) !important;
+  color: white !important;
+}
+
+input::placeholder {
+  color: white !important;
+}
+
+img {
+  color: white;
+}
+
+/* HEADER */
+
+header {
+  margin-bottom: 30px;
+}
+
+header ul li {
+  list-style-type: none;
+  margin: 0 10px;
+  padding: 5px;
+}
+
+.navbar {
+  background-color: transparent;
+}
+.navbar-nav .nav-link {
+  color: white !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../images/hamburger-menu.png) !important;
+}
+
+.navbar-light .navbar-toggler {
+  border-color: white !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+/* CREATE_PROJECT */
+
+.project_categories_list {
+  height: 100px;
+}
+
+.new_project_form div {
+  margin-bottom: 20px;
+}
+
+.displayed_files {
+  margin: 0;
+}
+
+/* CONSULT_PROJECT */
+
+.consult_projects_picture {
+  max-width: 200px;
+  height: 200px;
+  background-position: center;
+  object-fit: cover;
+}
+
+/* PROJECT */
+
+.project form input {
+  margin-bottom: 20px;
+}
+
+.project form button {
+  margin-bottom: 20px;
+}
+
+.project_picture {
+  max-width: var(--form-picture);
+}
+
+/* CONSULT_CATEGORIES */
+
+.visible {
+  background-color: green;
+  color: white;
+}
+
+.deleted {
+  background-color: red;
+}
+
+.btn-primary {
+  background-color: #28a745 !important;
+  border-color: #28a745 !important;
+}
